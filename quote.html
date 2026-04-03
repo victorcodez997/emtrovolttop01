@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emtrovolt Solutions | Request a Quote</title>
+    <meta
+      name="description"
+      content="Request a free engineering quote from Emtrovolt Solutions. Tell us about your project and our team will respond within 24 hours with a tailored proposal."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a
+      href="https://wa.me/2348123456789"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <h1>Emtrovolt<span>Solutions</span></h1>
+            <div class="tagline">
+              Powering Innovation in Energy & Engineering
+            </div>
+          </a>
+          <button
+            class="mobile-menu"
+            id="mobileMenuBtn"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html" class="nav-cta active">Get a Quote</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-content">
+            <span class="section-label">Get a quote</span>
+            <h1>Tell us about your project.</h1>
+            <p>
+              Complete the form below with as much detail as you have available.
+              Our engineering team will review your requirements and respond
+              with a comprehensive, tailored proposal within 24 hours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUOTE FORM -->
+      <section class="section">
+        <div class="container">
+          <div class="quote-form">
+            <form id="detailedQuoteForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName" class="required">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    autocomplete="name"
+                    required
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="companyName">Company Name</label>
+                  <input
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                    autocomplete="organization"
+                    placeholder="Your company (optional)"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="emailAddr" class="required">Email Address</label>
+                  <input
+                    type="email"
+                    id="emailAddr"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    placeholder="you@company.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phoneNum" class="required">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phoneNum"
+                    name="phone"
+                    autocomplete="tel"
+                    required
+                    placeholder="+234 800 000 0000"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="locationCity">Location (City/State)</label>
+                  <input
+                    type="text"
+                    id="locationCity"
+                    name="location"
+                    autocomplete="address-level2"
+                    placeholder="e.g., Lagos"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="budgetRange">Budget Range</label>
+                  <select id="budgetRange" name="budgetRange">
+                    <option value="">-- Select --</option>
+                    <option>₦100k – ₦500k</option>
+                    <option>₦500k – ₦1M</option>
+                    <option>₦1M – ₦5M</option>
+                    <option>₦5M+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="serviceCategory" class="required"
+                  >Service Category</label
+                >
+                <select id="serviceCategory" name="serviceCategory" required>
+                  <option value="">-- Select a category --</option>
+                  <option value="Renewable Energy">Renewable Energy</option>
+                  <option value="Inverter Sales & Service">
+                    Inverter Sales & Service
+                  </option>
+                  <option value="Fire & Gas Systems">Fire & Gas Systems</option>
+                  <option value="Oil & Gas Equipment Rental">
+                    Oil & Gas Equipment Rental
+                  </option>
+                  <option value="Electrical & Instrumentation">
+                    Electrical & Instrumentation
+                  </option>
+                  <option value="Control Systems & Automation">
+                    Control Systems & Automation
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="specificService">Specific Service</label>
+                <select id="specificService" name="specificService">
+                  <option value="">Please select a category first</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="projectDesc">Project Description</label>
+                <textarea
+                  rows="4"
+                  id="projectDesc"
+                  name="projectDescription"
+                  placeholder="Describe your needs, scope, or any special requirements..."
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label>Priority Level</label>
+                <div class="radio-group">
+                  <label
+                    ><input type="radio" name="priority" value="Urgent" />
+                    Urgent</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="priority"
+                      value="Normal"
+                      checked
+                    />
+                    Normal</label
+                  >
+                  <label
+                    ><input type="radio" name="priority" value="Flexible" />
+                    Flexible</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Preferred Contact Method</label>
+                <div class="radio-group">
+                  <label
+                    ><input type="radio" name="contactPref" value="Call" />
+                    Call</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="contactPref"
+                      value="Email"
+                      checked
+                    />
+                    Email</label
+                  >
+                  <label
+                    ><input type="radio" name="contactPref" value="WhatsApp" />
+                    WhatsApp</label
+                  >
+                </div>
+              </div>
+              <div class="form-submit-center" style="margin-top: 16px">
+                <button type="submit" class="btn-primary">
+                  Submit request
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-logo">
+            <h1>Emtrovolt<span>Solutions</span></h1>
+          </div>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="quote.html">Get a Quote</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2025 Emtrovolt Solutions Limited — Engineering Excellence for a
+            Sustainable Future
+          </p>
+          <p class="footer-tagline">
+            Reliable Energy, Industrial & Automation Solutions
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Back to top">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
